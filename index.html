@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS WHO?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>GUESS WHO?</h1>
+    </header>
+
+    <div class="game-board">
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/benGuessWho.jpg" class="char-img">
+            <p>BEN</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/alGuessWho.jpg" class="char-img">
+            <p>AL</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/amyGuessWho.jpg" class="char-img">
+            <p>AMY</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/carmenGuessWho.jpg" class="char-img">
+            <p>CARMEN</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/danielGuessWho.jpg" class="char-img">
+            <p>DANIEL</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/davidGuessWho.jpg" class="char-img">
+            <p>DAVID</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/emmaGuessWho.jpg" class="char-img">
+            <p>EMMA</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/ericGuessWho.jpg" class="char-img">
+            <p>ERIC</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/farahGuessWho.jpg" class="char-img">
+            <p>FARAH</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/gabeGuessWho.jpg" class="char-img">
+            <p>GABE</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/joeGuessWho.jpg" class="char-img">
+            <p>JOE</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/jordanGuessWho.jpg" class="char-img">
+            <p>JORDAN</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/katieGuessWho.jpg" class="char-img">
+            <p>KATIE</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/lauraGuessWho.jpg" class="char-img">
+            <p>LAURA</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/leoGuessWho.jpg" class="char-img">
+            <p>LEO</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/lilyGuessWho.jpg" class="char-img">
+            <p>LILY</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/lizGuessWho.jpg" class="char-img">
+            <p>LIZ</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/miaGuessWho.jpg" class="char-img">
+            <p>MIA</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/mikeGuessWho.jpg" class="char-img">
+            <p>MIKE</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/nickGuessWho.jpg" class="char-img">
+            <p>NICK</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/oliviaGuessWho.jpg" class="char-img">
+            <p>OLIVIA</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/rachelGuessWho.jpg" class="char-img">
+            <p>RACHEL</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/samGuessWho.jpg" class="char-img">
+            <p>SAM</p>
+        </div>
+        <div class="card" onclick="toggleCard(this)">
+            <img src="images/sofiaGuessWho.jpg" class="char-img">
+            <p>SOFIA</p>
+        </div>
+    </div>
+
+    <div class="control-panel">
+        <div class="tally">
+            WINS: <span id="wins">0</span> | LOSSES: <span id="losses">0</span>
+        </div>
+        <div class="button-group">
+            <button class="btn right" onclick="updateScore('wins')">CORRECT</button>
+            <button class="btn wrong" onclick="updateScore('losses')">WRONG</button>
+        </div>
+        <button class="reset-btn" onclick="resetBoard()">RESET BOARD</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
